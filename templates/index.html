@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esse gato sou eu</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Esse gata sou eu!</title>
 </head>
 <body>
     <header>
-        <img src="" alt="">
+        <img src="../static/gato3.png" alt="logo">
         <h1>Esse gato sou eu</h1>
     </header>
     <main>
@@ -16,15 +17,14 @@
                 <form action="/" method="post">
                     <label>Informe seu nome</label>
                     <input type="text" name="nome" />
-                    <button type="submit">ENVIAR</button>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
             <div class="gato">
                 {% if not url_imagem %}
-                    <img src="" alt="Gato">
-                <p>Nome do Gato</p>
+                    <img src="../static/gato2.jpg" alt="..." />
                 {% else %}
-                    <img src="{{url_imagem}}">
+                    <img src="{{url_imagem}}" />
                     <p>{{ nome }}</p>
                 {% endif %}
                 {% if erro %}
@@ -34,7 +34,7 @@
         </div>
     </main>
     <footer>
-
+        <p>Desenvolvido por uma gata. Miau!</p>
     </footer>
 </body>
 </html>

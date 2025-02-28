@@ -24,11 +24,6 @@ def index():
     else:
         print(response.status_code)
         return render_template('index.html', erro="Erro no sistema! O gato sumiu!")
-    
-
-    
-
-
 
 if __name__ == '__main__':
     app.run(debug=True)
